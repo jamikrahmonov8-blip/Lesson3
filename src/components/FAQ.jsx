@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const questions = [
   "Как я могу оплатить заказ?",
   "Могу ли я изменить адрес и время доставки?",
@@ -8,11 +6,7 @@ const questions = [
 ]
 
 export default function FAQ() {
-
-  const [open, setOpen] = useState(null)
-
   return (
-
     <section>
 
       <h2 className="text-2xl font-semibold mb-6">
@@ -42,31 +36,25 @@ export default function FAQ() {
       <div className="flex flex-col gap-3">
 
         {questions.map((q, i) => (
-
           <div
             key={i}
-            onClick={() => setOpen(open === i ? null : i)}
-            className="bg-white rounded-xl p-5 cursor-pointer"
+            className="bg-white rounded-xl p-5"
           >
 
             <div className="flex justify-between">
               <p>{q}</p>
-              <span>{open === i ? "-" : "+"}</span>
+              <span>+</span>
             </div>
 
-            {open === i && (
-              <p className="text-gray-500 text-sm mt-3">
-                Наши курьеры доставляют заказы ежедневно с 19:00 до 23:00
-              </p>
-            )}
+            <p className="text-gray-500 text-sm mt-3">
+              Наши курьеры доставляют заказы ежедневно с 19:00 до 23:00
+            </p>
 
           </div>
-
         ))}
 
       </div>
 
     </section>
-
   )
 }
