@@ -26,11 +26,11 @@ import img12 from "../assets/image copy 12.png";
 import img13 from "../assets/image copy 13.png";
 import img14 from "../assets/image copy 14.png";
 
-import PromoCards from "../components/PromoCards"
-import FAQ from "../components/FAQ"
-import DietConsultation from "../components/DietConsultation"
-import Reviews from "../components/Reviews"
-import DietPlan from "../components/DietPlan"
+import PromoCards from "../components/Section1"
+import FAQ from "../components/Section2"
+import DietConsultation from "../components/Section3"
+import Reviews from "../components/Section4"
+import DietPlan from "../components/Section5"
 
 
 
